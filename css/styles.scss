@@ -1,0 +1,115 @@
+---
+---
+
+$primary-color-dark: #30CA6D;
+$stylish-color-dark: #80EBB7;
+$special-color-dark: #263238;
+$special-color: #37474F;
+$unique-color: #3F729B;
+
+// fonts
+
+$header-font: 'IBM Plex Sans', sans-serif;
+$body-font: 'Montserrat', sans-serif;
+
+body {
+  padding-top: 88px;
+  font-family: $body-font;
+  background-color: #FCFCFC!important;
+}
+h1,h2,h3,h4 {
+  font-family: $header-font;
+  font-weight: 700;
+  color: #222222;
+}
+.navbar-brand:hover {
+  color: #444444!important;
+}
+body, #mainNav {
+  color: black;
+  background-color: #fcfcfc;
+}
+#homeHeader {
+  background-image: url('/img/homeimage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+}
+#homeHeader h1 {
+  font-size: 5rem;
+}
+.btn-outline-primary {
+  border: 2px solid black;
+  color: black;
+  border-radius: 0;
+  font-family: $body-font;
+}
+.btn-outline-primary:hover {
+  border-color: white;
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (max-width: 576px) {
+  #homeHeader {
+    background-image: url('/img/homepageMobile.jpg');
+    height: 100vh;
+  }
+  #homeHeader h1 {
+    font-size: 4rem;
+  }
+}
+ul.instagram-lite {
+  display: flex;
+  width: 100%;
+}
+li.il-item {
+  flex-direction: column;
+  list-style: none;
+  padding:10px;
+}
+img.il-photo__img {
+    width: 100%;
+    height: 320px;
+}
+.aboutImage {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#newsletter {
+  width: 100%;
+  background-color: #222222;
+  padding: 40px;
+
+}
+#newsletter input#mce-EMAIL {
+  height: 63px;
+  padding-left: 15px;
+  font-size: 14px;
+  border-radius: 0;
+}
+.instagram-media {
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+#featuredPost,#blogPostCard {
+  margin-bottom: 30px;
+}
+.imageOverlay {
+  position: absolute;
+  bottom: -22px;
+  left: 9px;
+}
+.imageOverlay h3 {
+  color: #fcfcfc;
+  font-size: 54px;
+}
+.featuredImage {
+  width: 100%;
+  height: auto;
+}

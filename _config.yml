@@ -1,0 +1,18 @@
+---
+title: All Beings Art
+timezone: GMT
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+email: naamanh10@gmail.com
+description: 
+baseurl:
+url:
+markdown: kramdown
+plugins:
+  - jekyll-admin
