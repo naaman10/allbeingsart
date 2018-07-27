@@ -9,8 +9,8 @@ collections:
     title: Uploads
     output: true
 defaults:
-email: naamanh10@gmail.com
-description: 
+email: contact@allbeingsart.com
+description:
 baseurl:
 url:
 markdown: kramdown
