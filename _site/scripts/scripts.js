@@ -42,17 +42,28 @@ $(function() {
 		accessToken: '5819940543.4d0de12.ecb76494c8694bf1a60201e8473d99ca',
 		list: true,
 		urls: true,
+    likes: true,
+    captions: true,
     limit: 6,
 		success: function(data) {
 			console.log(data);
       $(".instagram-lite").addClass('row');
       $(".il-item").addClass('col-6 col-md-4');
-      $(".il-item").on('click', function() {
+      $(".il-item a").on('click', function() {
         event.preventDefault();
-        $("#instagramModal").replaceWith('<div class="modal" tabindex="-1" role="dialog" id="instagramModal"></div>');
-        var postLink = $(this).children('a').attr('href');
-        $("#instagramModal").append('<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="' + postLink + '" data-instgrm-version="9" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>');
-        console.log("post: " + postLink);
+        $(".instagram-likes").text("");
+        $(".instagram-caption").text("");
+        var postImage = $(this).children(".il-photo__img").attr('src');
+        var postLink = $(this).attr('href');
+        var postLikes = $(this).siblings(".il-photo__meta").children('.il-photo__likes').text();
+        var postCaption = $(this).siblings(".il-photo__meta").children('.il-photo__caption').html();
+        console.log(postLikes);
+        console.log(postLink);
+        var postId = $(this).attr('data-instagram-id');
+        $(".instagram-media").attr('src', postImage);
+        $("a.instagram-link").attr('href', postLink);
+        $(".instagram-likes").append('<i class="fas fa-heart" id=""></i> ' + postLikes);
+        $(".instagram-caption").append(postCaption);
         $("#instagramModal").modal('show');
       });
 		},
@@ -61,4 +72,8 @@ $(function() {
 			$('.instagram-lite').remove();
 		}
 	});
+});
+$(".instagram-media").hover(function() {
+  event.preventDefault();
+  $(".instagram-link").css('display','block');
 });
