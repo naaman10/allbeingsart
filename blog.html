@@ -1,0 +1,46 @@
+---
+title: Home
+permalink: "/blog"
+layout: page
+---
+<section id="blog">
+  <div class="container">
+    {% for post in site.categories.featured %}
+    {% if post.featured == true %}
+    <div class="row" id="featuredPost">
+      <div class="col-12 col-md-8">
+        <a href="{{post.url}}"><img src="{{ post.featuredImage }}" class="img-fluid"></a>
+        <div class="imageOverlay"><h3>Featured</h3></div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h5 class="card-title">{{post.title}}</h5>
+        <p class="card-text">{{post.featuredIntro}}</p>
+        <a href="{{post.url}}" class="btn btn-outline-primary btn-block">View Post</a>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+
+
+    <div class="row">
+
+
+          {% for post in site.posts %}
+          {% if post.featured == false %}
+          <div class="col-6 col-md-4">
+            <div class="card" id="blogPostCard">
+              <a href="{{post.url}}"><img class="card-img-top" src="{{post.imageThumb}}" alt="Card image cap"></a>
+              <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text"></p>
+                <a href="{{post.url}}" class="btn btn-outline-primary btn-block">View Post</a>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+
+    </div>
+  </div>
+</section>
