@@ -4,7 +4,7 @@ date: 2016-05-20 00:00:00 Z
 layout: post
 author: Bart Simpson
 meta: Springfield
-imageThumb: http://via.placeholder.com/320x320
+imageThumb: img/example-image-320x320.jpg
 featured: false
 featuredImage: http://via.placeholder.com/760x320
 featuredIntro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc"
