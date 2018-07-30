@@ -2,9 +2,9 @@
 title: This is a featured post
 date: 2016-05-20 00:00:00 Z
 layout: post
-imageThumb: http://via.placeholder.com/320x320
+imageThumb: img/example-image-320x320.jpg
 featured: true
-featuredImage: http://via.placeholder.com/760x320
+featuredImage: /img/example-image-760x320.jpg
 featuredIntro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc"
 categories: featured
 ---

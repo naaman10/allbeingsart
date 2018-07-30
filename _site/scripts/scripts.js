@@ -77,3 +77,6 @@ $(".instagram-media").hover(function() {
   event.preventDefault();
   $(".instagram-link").css('display','block');
 });
+$(".instagram-media").click(function() {
+  $("#instagramModal").modal('hide');
+});
