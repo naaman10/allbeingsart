@@ -11,6 +11,7 @@ collections:
 defaults:
 email: contact@allbeingsart.com
 description:
+instagram: allbeingsart
 baseurl:
 url:
 markdown: kramdown

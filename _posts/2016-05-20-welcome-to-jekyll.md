@@ -4,7 +4,7 @@ date: 2016-05-20 21:11:27 Z
 layout: post
 subtitle: Jekyll is a blog-aware, static site generator in Ruby https://jekyllrb.com
 author: jekyll
-imageThumb: http://via.placeholder.com/320x320
+imageThumb: img/example-image-320x320.jpg
 featured: false
 featuredImage: http://via.placeholder.com/760x320
 featuredIntro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc"

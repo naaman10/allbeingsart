@@ -123,3 +123,13 @@ img.il-photo__img {
 
 .il-photo__meta {
   display: none; }
+
+.socialList {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  padding-left: 0; }
+
+.socialListItem {
+  width: 100%;
+  font-size: 50px; }
