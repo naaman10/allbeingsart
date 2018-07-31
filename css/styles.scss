@@ -70,6 +70,9 @@ body, #mainNav {
 }
 
 @media only screen and (max-width: 576px) {
+  body {
+    padding-top: 120px;
+  }
   #homeHeader {
     background-image: url('/img/homepageMobile.jpg');
     height: 100vh;
@@ -152,4 +155,26 @@ img.il-photo__img {
 .socialListItem {
   width: 100%;
   font-size: 50px;
+}
+#blogHomePage #featuredPost {
+  margin: 20px;
+}
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.list-group-item:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.list-group-item:hover,.list-group-item.active {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+#commissionsCard {
+  margin-top: 20px;
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
 }
