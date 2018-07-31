@@ -80,3 +80,13 @@ $(".instagram-media").hover(function() {
 $(".instagram-media").click(function() {
   $("#instagramModal").modal('hide');
 });
+
+$(".catMenu a.list-group-item").on('click', function(event) {
+  event.preventDefault();
+  $(this).siblings('.active').removeClass('active');
+  var selectedCategory = $(this).attr('href');
+  $("#productList").load('/ajax/' + selectedCategory +'.html',   function() {
+
+  });
+  $(this).addClass('active');
+});
