@@ -7,6 +7,26 @@ layout: page
   <ul class="instagram-lite"></ul>
 </div>
 
+<section id="blogHomePage">
+  <div class="container">
+    {% for post in site.categories.featured %}
+    {% if post.featured == true %}
+    <div class="row" id="featuredPost">
+      <div class="col-12 col-md-8">
+        <a href="{{post.url}}"><img src="{{ post.featuredImage }}" class="img-fluid"></a>
+        <div class="imageOverlay"><h3>Featured</h3></div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h5 class="card-title">{{post.title}}</h5>
+        <p class="card-text">{{post.featuredIntro}}</p>
+        <a href="{{post.url}}" class="btn btn-outline-primary btn-block">View Post</a>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
+</section>
+
 {% include newsletter.html %}
 
 

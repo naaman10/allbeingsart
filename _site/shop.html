@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+
+    <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/css/loading.css"/>
+<link rel="stylesheet" type="text/css" href="/css/theme.css"/>
+<link rel="stylesheet" href="/css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|Montserrat" rel="stylesheet">
+<title>Shop | All Beings Art</title>
+<meta name="keywords" content="{}"/>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+ <div class="container">
+   <a class="navbar-brand js-scroll-trigger" href=""><img src="/img/logo.png" height="60"></a>
+   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+     Menu
+     <i class="fas fa-bars"></i>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarResponsive">
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item">
+         <a class="nav-link js-scroll-trigger" href="/about">about</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link js-scroll-trigger" href="/shop">shop</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link js-scroll-trigger" href="/blog">blog</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link js-scroll-trigger" href="/contact">contact</a>
+       </li>
+     </ul>
+   </div>
+ </div>
+</nav>
+
+
+
+
+
+    <section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <ul class="list-group catMenu">
+          <a href="a4prints" class="list-group-item list-group-item-action active">A4 Prints</a>
+          <a href="a5prints" class="list-group-item list-group-item-action">A5 Prints</a>
+        </ul>
+        <div class="card" id="commissionsCard">
+          <div class="card-body">
+            <h5 class="card-title">Commissions</h5>
+            <p class="card-text">If you would like a custom print of your fury loved ones please contact.</p>
+            <a href="/contact" class="btn btn-primary btn-block card-link">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-9 justify-content-left" id="productList">
+      <div id='collection-component-1e16e3b0120'></div>
+      <script type="text/javascript">
+      /*<![CDATA[*/
+
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+          script.onload = ShopifyBuyInit;
+        }
+
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: 'all-beings-art.myshopify.com',
+            apiKey: 'd5f36092e8ce26f74c669248c105ab50',
+            appId: '6',
+          });
+
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('collection', {
+              id: 59292155977,
+              node: document.getElementById('collection-component-1e16e3b0120'),
+              moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+              options: {
+                "product": {
+                  "variantId": "all",
+                  "width": "380px",
+                  "contents": {
+                    "imgWithCarousel": false,
+                    "variantTitle": false,
+                    "description": false,
+                    "buttonWithQuantity": false,
+                    "quantity": false
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "15px",
+                        "margin-bottom": "50px"
+                      }
+                    },
+                    "button": {
+                      "background-color": "#ffffff",
+                      "color": "#000000",
+                      "border": "2px solid #ffffff",
+                      "font-family": "Montserrat, sans-serif",
+                      "margin": "10px !important",
+                      "padding": "1.25rem 2rem",
+                      "box-shadow": "0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important",
+                      ":hover": {
+                        "background-color": "#000000",
+                        "color": "#ffffff",
+                        "border": "2px solid #000000"
+                      },
+                      "border-radius": "0px",
+                      ":focus": {
+                        "background-color": "#e6e6e6"
+                      }
+                    },
+                    "compareAt": {
+                      "font-size": "12px"
+                    }
+                  }
+                },
+                "cart": {
+                  "contents": {
+                    "button": true
+                  },
+                  "styles": {
+                    "button": {
+                      "background-color": "#ffffff",
+                      "color": "#000000",
+                      "border": "2px solid #ffffff",
+                      "font-family": "Montserrat, sans-serif",
+                      "margin": "10px !important",
+                      "padding": "1.25rem 2rem",
+                      "box-shadow": "0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important",
+                      ":hover": {
+                        "background-color": "#000000",
+                        "color": "#ffffff",
+                        "border": "2px solid #000000"
+                      },
+                      "border-radius": "0px",
+                      ":focus": {
+                        "background-color": "#e6e6e6"
+                      }
+                    },
+                    "footer": {
+                      "background-color": "#ffffff"
+                    }
+                  }
+                },
+                "modalProduct": {
+                  "contents": {
+                    "img": false,
+                    "imgWithCarousel": true,
+                    "variantTitle": false,
+                    "buttonWithQuantity": true,
+                    "button": false,
+                    "quantity": false
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0px",
+                        "margin-bottom": "0px"
+                      }
+                    },
+                    "button": {
+                      "background-color": "#ffffff",
+                      "color": "#000000",
+                      ":hover": {
+                        "background-color": "#e6e6e6",
+                        "color": "#000000"
+                      },
+                      "border-radius": "0px",
+                      ":focus": {
+                        "background-color": "#e6e6e6"
+                      }
+                    }
+                  }
+                },
+                "toggle": {
+                  "styles": {
+                    "toggle": {
+                      "background-color": "#ffffff",
+                      ":hover": {
+                        "background-color": "#e6e6e6"
+                      },
+                      ":focus": {
+                        "background-color": "#e6e6e6"
+                      }
+                    },
+                    "count": {
+                      "color": "#000000",
+                      ":hover": {
+                        "color": "#000000"
+                      }
+                    },
+                    "iconPath": {
+                      "fill": "#000000"
+                    }
+                  }
+                },
+                "productSet": {
+                  "styles": {
+                    "products": {
+                      "@media (min-width: 601px)": {
+                        "margin-left": "-20px"
+                      }
+                    }
+                  }
+                }
+              }
+            });
+          });
+        }
+      })();
+      /*]]>*/
+      </script>
+            </div>
+          </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="/scripts/jquery.cookie.js"></script>
+    <script src="/scripts/instagramlite.js"></script>
+    <script src="/scripts/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    </body>
+</html>
