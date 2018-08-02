@@ -90,3 +90,11 @@ $(".catMenu a.list-group-item").on('click', function(event) {
   });
   $(this).addClass('active');
 });
+$("#contactClear").on('click', function() {
+  event.preventDefault();
+  $("#mce-EMAIL").val("");
+  $("#mce-FULLNAME").val("");
+  $("#mce-PHONE").val("");
+  $("#mce-MMERGE2").val("");
+  $("#mce-MMERGE5").val("");
+});
