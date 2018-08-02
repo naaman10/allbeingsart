@@ -67,181 +67,181 @@
         </div>
       </div>
       <div class="col-12 col-md-9 justify-content-left" id="productList">
-      <div id='collection-component-1e16e3b0120'></div>
-      <script type="text/javascript">
-      /*<![CDATA[*/
+        <div id='collection-component-7ef9916299c'></div>
+        <script type="text/javascript">
+        /*<![CDATA[*/
 
-      (function () {
-        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-        if (window.ShopifyBuy) {
-          if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
+        (function () {
+          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              ShopifyBuyInit();
+            } else {
+              loadScript();
+            }
           } else {
             loadScript();
           }
-        } else {
-          loadScript();
-        }
 
-        function loadScript() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = scriptURL;
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-          script.onload = ShopifyBuyInit;
-        }
+          function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+          }
 
-        function ShopifyBuyInit() {
-          var client = ShopifyBuy.buildClient({
-            domain: 'all-beings-art.myshopify.com',
-            apiKey: 'd5f36092e8ce26f74c669248c105ab50',
-            appId: '6',
-          });
+          function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+              domain: 'all-beings-art.myshopify.com',
+              apiKey: 'd5f36092e8ce26f74c669248c105ab50',
+              appId: '6',
+            });
 
-          ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('collection', {
-              id: 59292155977,
-              node: document.getElementById('collection-component-1e16e3b0120'),
-              moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
-              options: {
-                "product": {
-                  "variantId": "all",
-                  "width": "380px",
-                  "contents": {
-                    "imgWithCarousel": false,
-                    "variantTitle": false,
-                    "description": false,
-                    "buttonWithQuantity": false,
-                    "quantity": false
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+              ui.createComponent('collection', {
+                id: 59292123209,
+                node: document.getElementById('collection-component-7ef9916299c'),
+                moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+                options: {
+                  "product": {
+                    "variantId": "all",
+                    "width": "380px",
+                    "contents": {
+                      "imgWithCarousel": false,
+                      "variantTitle": false,
+                      "description": false,
+                      "buttonWithQuantity": false,
+                      "quantity": false
+                    },
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "100%",
+                          "margin-left": "15px",
+                          "margin-bottom": "50px"
+                        }
+                      },
+                      "button": {
+                        "background-color": "#ffffff",
+                        "color": "#000000",
+                        "border": "2px solid #ffffff",
+                        "font-family": "Montserrat, sans-serif",
+                        "margin": "10px !important",
+                        "padding": "1.25rem 2rem",
+                        "box-shadow": "0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important",
+                        ":hover": {
+                          "background-color": "#000000",
+                          "color": "#ffffff",
+                          "border": "2px solid #000000"
+                        },
+                        "border-radius": "0px",
+                        ":focus": {
+                          "background-color": "#e6e6e6"
+                        }
+                      },
+                      "compareAt": {
+                        "font-size": "12px"
+                      }
+                    }
                   },
-                  "styles": {
-                    "product": {
-                      "@media (min-width: 601px)": {
-                        "max-width": "100%",
-                        "margin-left": "15px",
-                        "margin-bottom": "50px"
-                      }
+                  "cart": {
+                    "contents": {
+                      "button": true
                     },
-                    "button": {
-                      "background-color": "#ffffff",
-                      "color": "#000000",
-                      "border": "2px solid #ffffff",
-                      "font-family": "Montserrat, sans-serif",
-                      "margin": "10px !important",
-                      "padding": "1.25rem 2rem",
-                      "box-shadow": "0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important",
-                      ":hover": {
-                        "background-color": "#000000",
-                        "color": "#ffffff",
-                        "border": "2px solid #000000"
+                    "styles": {
+                      "button": {
+                        "background-color": "#ffffff",
+                        "color": "#000000",
+                        "border": "2px solid #ffffff",
+                        "font-family": "Montserrat, sans-serif",
+                        "margin": "10px !important",
+                        "padding": "1.25rem 2rem",
+                        "box-shadow": "0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important",
+                        ":hover": {
+                          "background-color": "#000000",
+                          "color": "#ffffff",
+                          "border": "2px solid #000000"
+                        },
+                        "border-radius": "0px",
+                        ":focus": {
+                          "background-color": "#e6e6e6"
+                        }
                       },
-                      "border-radius": "0px",
-                      ":focus": {
-                        "background-color": "#e6e6e6"
+                      "footer": {
+                        "background-color": "#ffffff"
                       }
-                    },
-                    "compareAt": {
-                      "font-size": "12px"
                     }
-                  }
-                },
-                "cart": {
-                  "contents": {
-                    "button": true
                   },
-                  "styles": {
-                    "button": {
-                      "background-color": "#ffffff",
-                      "color": "#000000",
-                      "border": "2px solid #ffffff",
-                      "font-family": "Montserrat, sans-serif",
-                      "margin": "10px !important",
-                      "padding": "1.25rem 2rem",
-                      "box-shadow": "0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important",
-                      ":hover": {
-                        "background-color": "#000000",
-                        "color": "#ffffff",
-                        "border": "2px solid #000000"
-                      },
-                      "border-radius": "0px",
-                      ":focus": {
-                        "background-color": "#e6e6e6"
-                      }
+                  "modalProduct": {
+                    "contents": {
+                      "img": false,
+                      "imgWithCarousel": true,
+                      "variantTitle": false,
+                      "buttonWithQuantity": true,
+                      "button": false,
+                      "quantity": false
                     },
-                    "footer": {
-                      "background-color": "#ffffff"
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "100%",
+                          "margin-left": "0px",
+                          "margin-bottom": "0px"
+                        }
+                      },
+                      "button": {
+                        "background-color": "#ffffff",
+                        "color": "#000000",
+                        ":hover": {
+                          "background-color": "#e6e6e6",
+                          "color": "#000000"
+                        },
+                        "border-radius": "0px",
+                        ":focus": {
+                          "background-color": "#e6e6e6"
+                        }
+                      }
                     }
-                  }
-                },
-                "modalProduct": {
-                  "contents": {
-                    "img": false,
-                    "imgWithCarousel": true,
-                    "variantTitle": false,
-                    "buttonWithQuantity": true,
-                    "button": false,
-                    "quantity": false
                   },
-                  "styles": {
-                    "product": {
-                      "@media (min-width: 601px)": {
-                        "max-width": "100%",
-                        "margin-left": "0px",
-                        "margin-bottom": "0px"
-                      }
-                    },
-                    "button": {
-                      "background-color": "#ffffff",
-                      "color": "#000000",
-                      ":hover": {
-                        "background-color": "#e6e6e6",
-                        "color": "#000000"
+                  "toggle": {
+                    "styles": {
+                      "toggle": {
+                        "background-color": "#ffffff",
+                        ":hover": {
+                          "background-color": "#e6e6e6"
+                        },
+                        ":focus": {
+                          "background-color": "#e6e6e6"
+                        }
                       },
-                      "border-radius": "0px",
-                      ":focus": {
-                        "background-color": "#e6e6e6"
+                      "count": {
+                        "color": "#000000",
+                        ":hover": {
+                          "color": "#000000"
+                        }
+                      },
+                      "iconPath": {
+                        "fill": "#000000"
                       }
                     }
-                  }
-                },
-                "toggle": {
-                  "styles": {
-                    "toggle": {
-                      "background-color": "#ffffff",
-                      ":hover": {
-                        "background-color": "#e6e6e6"
-                      },
-                      ":focus": {
-                        "background-color": "#e6e6e6"
-                      }
-                    },
-                    "count": {
-                      "color": "#000000",
-                      ":hover": {
-                        "color": "#000000"
-                      }
-                    },
-                    "iconPath": {
-                      "fill": "#000000"
-                    }
-                  }
-                },
-                "productSet": {
-                  "styles": {
-                    "products": {
-                      "@media (min-width: 601px)": {
-                        "margin-left": "-20px"
+                  },
+                  "productSet": {
+                    "styles": {
+                      "products": {
+                        "@media (min-width: 601px)": {
+                          "margin-left": "-20px"
+                        }
                       }
                     }
                   }
                 }
-              }
+              });
             });
-          });
-        }
-      })();
-      /*]]>*/
-      </script>
+          }
+        })();
+        /*]]>*/
+        </script>
             </div>
           </div>
   </div>
