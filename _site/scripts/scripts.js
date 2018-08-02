@@ -98,3 +98,9 @@ $("#contactClear").on('click', function() {
   $("#mce-MMERGE2").val("");
   $("#mce-MMERGE5").val("");
 });
+$(document).ready(function() {
+  var pageTitle = window.location.pathname;
+  pageTitle = pageTitle.replace('/','');
+  pageId = (pageTitle + '-nav');
+  $("#" + pageId).addClass('active');
+});
