@@ -44,3 +44,4 @@ fields:
   default: ''
 pages:
 - _posts/2018-07-27-featured-post.md
+- _posts/2016-05-20-super-long-article.md
