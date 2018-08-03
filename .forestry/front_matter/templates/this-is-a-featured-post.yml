@@ -12,7 +12,7 @@ fields:
   label: Layout
   type: text
   hidden: false
-  default: ''
+  default: page
 - name: date
   label: Date
   type: datetime
@@ -22,22 +22,16 @@ fields:
   name: thumbnail_image
   label: Thumbnail Image
   description: Thumbnail images should be 320x320
-- name: imageThumb
-  label: Imagethumb
-  type: text
-  hidden: false
-  default: ''
 - name: featured
   label: Featured
   type: boolean
   hidden: false
   default: ''
   description: Only one post should ever be check as featured
-- name: featuredImage
-  label: Featuredimage
-  type: text
-  hidden: false
-  default: ''
+- type: file
+  label: Featured Post Image
+  name: featured_image
+  description: Thumbnail images should be 7600x320
 - name: featuredIntro
   label: Featuredintro
   type: text
@@ -48,6 +42,3 @@ fields:
   type: tag_list
   hidden: false
   default: ''
-- type: file
-  label: Featured Post Image
-  name: featured_image
