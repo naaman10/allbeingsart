@@ -1,7 +1,7 @@
 ---
 title: This is a featured post
 date: 2016-05-20 00:00:00 +0000
-layout: post.html
+layout: post
 imageThumb: img/example-image-320x320.jpg
 featured: true
 featuredImage: "/img/example-image-760x320.jpg"
