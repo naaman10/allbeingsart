@@ -1,16 +1,19 @@
 ---
 title: Welcome to jekyll! Add something extra
-date: 2016-05-20 21:11:27 Z
+date: 2016-05-20 21:11:27 +0000
 layout: post
 subtitle: Jekyll is a blog-aware, static site generator in Ruby https://jekyllrb.com
 author: jekyll
 imageThumb: img/example-image-320x320.jpg
 featured: false
 featuredImage: http://via.placeholder.com/760x320
-featuredIntro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc"
+featuredIntro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum
+  neque eget nunc
 categories: featured
----
+thumbnail_image: "/uploads/example-image-320x320.jpg"
+featured_image: "/uploads/example-image-760x320.jpg"
 
+---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.

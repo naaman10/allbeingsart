@@ -1,16 +1,19 @@
 ---
 title: This post demonstrates post content styles
-date: 2016-05-20 00:00:00 Z
+date: 2016-05-20 00:00:00 +0000
 layout: post
 author: Bart Simpson
 meta: Springfield
 imageThumb: img/example-image-320x320.jpg
 featured: false
 featuredImage: http://via.placeholder.com/760x320
-featuredIntro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc"
+featuredIntro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum
+  neque eget nunc
 categories: featured
----
+thumbnail_image: "/uploads/example-image-320x320.jpg"
+featured_image: "/uploads/example-image-760x320.jpg"
 
+---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
 
 ## Some great heading (h2)
