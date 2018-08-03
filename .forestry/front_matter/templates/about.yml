@@ -26,3 +26,5 @@ fields:
 - type: file
   name: main_image
   label: main image
+pages:
+- about.html
