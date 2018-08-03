@@ -1,0 +1,45 @@
+---
+label: This is a featured post
+hide_body: 
+is_partial: 
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: imageThumb
+  label: Imagethumb
+  type: text
+  hidden: false
+  default: ''
+- name: featured
+  label: Featured
+  type: boolean
+  hidden: false
+  default: ''
+- name: featuredImage
+  label: Featuredimage
+  type: text
+  hidden: false
+  default: ''
+- name: featuredIntro
+  label: Featuredintro
+  type: text
+  hidden: false
+  default: ''
+- name: categories
+  label: Categories
+  type: tag_list
+  hidden: false
+  default: ''
