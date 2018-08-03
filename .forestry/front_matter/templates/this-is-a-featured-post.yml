@@ -31,7 +31,7 @@ fields:
 - type: file
   label: Featured Post Image
   name: featured_image
-  description: Thumbnail images should be 760x320
+  description: Featured images should be 760x320
 - name: featuredIntro
   label: Featuredintro
   type: text
